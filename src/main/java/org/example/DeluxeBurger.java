@@ -10,10 +10,30 @@ public class DeluxeBurger extends Hamburger {
                 new Carrot("mini"), new Mustard("extrahot"));
         this.drinkType = drinkType;
         this.chipsType = chipsType;
-        setLettuceQuantity(2);
-        setTomatoQuantity(2);
-        setCarrotQuantity(1);
-        setMustardQuantity(1);
+        super.setLettuceQuantity(2);
+        super.setTomatoQuantity(2);
+        super.setCarrotQuantity(1);
+        super.setMustardQuantity(1);
+    }
+
+    @Override
+    public void setLettuceQuantity(int lettuceQuantity) {
+        System.out.println("Deluxe burger is sold as-is. No modifications!");
+    }
+
+    @Override
+    public void setTomatoQuantity(int tomatoQuantity) {
+        System.out.println("Deluxe burger is sold as-is. No modifications!");
+    }
+
+    @Override
+    public void setCarrotQuantity(int carrotQuantity) {
+        System.out.println("Deluxe burger is sold as-is. No modifications!");
+    }
+
+    @Override
+    public void setMustardQuantity(int mustardQuantity) {
+        System.out.println("Deluxe burger is sold as-is. No modifications!");
     }
 
     @Override
